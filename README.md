@@ -21,27 +21,17 @@ Better Comment Suggestion:
 Or
 // Path.Combine() joins multiple path segments into a valid file path.
 
-Here are some examples of how Path.Combine() works:
-
-1️⃣ Basic Example (Joining Folder and File)
-
-string folder = @"C:\Users\John\Documents";
-string fileName = "report.pdf";
-string fullPath = Path.Combine(folder, fileName);
-
-Console.WriteLine(fullPath);  
-// Output: C:\Users\John\Documents\report.pdf
-
-✅ Path.Combine() ensures that the folder and file are properly joined with \.
-
 
 Here are some examples of how Path.Combine() works:
 
 NB: Follow these steps // the steps below
 
 1️⃣ Basic Example (Joining Folder and File)
+
 string folder = @"C:\Users\John\Documents";
+
 string fileName = "report.pdf";
+
 string fullPath = Path.Combine(folder, fileName);
 
 Console.WriteLine(fullPath);  
@@ -51,9 +41,13 @@ Console.WriteLine(fullPath);
 
 
 2️⃣ Joining Multiple Folders
+
 string part1 = @"C:\Users";
+
 string part2 = "John";
+
 string part3 = "Desktop";
+
 string fullPath = Path.Combine(part1, part2, part3);
 
 Console.WriteLine(fullPath);  
@@ -61,8 +55,11 @@ Console.WriteLine(fullPath);
 ✅ You can combine multiple path segments at once.
 
 3️⃣ Avoiding Incorrect Separators
+
 string folder = @"C:\Users\John\Documents\";  // Has trailing backslash
+
 string file = "notes.txt";
+
 string fullPath = Path.Combine(folder, file);
 
 Console.WriteLine(fullPath);  
@@ -72,8 +69,11 @@ Console.WriteLine(fullPath);
 
 
 4️⃣ Example from Your Code
+
 string destinationFolder = @"D:\Ne confondez plus";
+
 string videoFileName = "video1.mp4";
+
 string destinationFile = Path.Combine(destinationFolder, videoFileName);
 
 Console.WriteLine(destinationFile);
