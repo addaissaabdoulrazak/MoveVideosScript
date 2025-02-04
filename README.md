@@ -52,6 +52,7 @@ string fullPath = Path.Combine(part1, part2, part3);
 
 Console.WriteLine(fullPath);  
 // Output: C:\Users\John\Desktop
+
 ✅ You can combine multiple path segments at once.
 
 3️⃣ Avoiding Incorrect Separators
@@ -78,6 +79,7 @@ string destinationFile = Path.Combine(destinationFolder, videoFileName);
 
 Console.WriteLine(destinationFile);
 // Output: D:\Ne confondez plus\video1.mp4
+
 ✅ This is how your script correctly builds the destination file path before moving videos.
 
 Let me know if you need more examples! 🚀
